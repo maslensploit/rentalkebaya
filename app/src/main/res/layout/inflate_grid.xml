@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="10dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+           android:src="@drawable/logo"
+            android:layout_height="125dp"/>
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoui"
+            android:text="Nama Barang"
+            android:background="@color/grayscale"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="50.000"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
