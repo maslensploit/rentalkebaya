@@ -2,21 +2,52 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rentalkebaya">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RENTALKEBAYA">
-        <activity android:name=".keteranganActivity"></activity>
-        <activity android:name=".DashboardActivity" />
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.RENTALKEBAYA"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".registerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name=".NotaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+
+        <activity android:name=".GoogleActivity" />
+
+        <activity android:name=".loginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".detailActivity" />
+
+
+        <activity android:name=".keteranganActivity" />
+        <activity android:name=".DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+
+        <activity android:name=".splashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         </activity>
     </application>
 

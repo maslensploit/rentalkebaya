@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoui"
+            android:text="Jumlah Bayar"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/totalBayar"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoui"
+            android:text="1000000"
+            android:textAlignment="center"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoui"
+            android:text="Jumlah Pembayaran"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintEnabled="false"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edJumlahUang"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoui"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Cetak Nota"
+            android:background="@drawable/bg_button_primary"
+            android:fontFamily="@font/segoui"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnBayar"
+            android:layout_marginHorizontal="60dp"
+            android:text="bayar"
+            android:background="@drawable/bg_button_primary"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoui"
+            android:text="Kembalian"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/kembalian"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoui"
+            android:text="0"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

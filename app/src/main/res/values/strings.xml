@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">RENTAL KEBAYA</string>
+    <string name="buat_akun_baru_sign_in">Buat akun baru? Register</string>
+    <string name="login">Login</string>
+    <string name="signuphere">Belum punya akun? Daftar</string>
+    <string name="signup">Daftar AKun</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="loginhere">Sudah punya akun? Login</string>
+    <string name="fullname">Full Name</string>
+    <string name="email">Email</string>
+
+
+    <string-array name="menu_spinner">
+        <item>Pilih Menu</item>
+        <item>Kebaya Polos Putih</item>
+        <item>Kebaya Polos Putih 2</item>
+        <item>Kebaya Polos Putih 3</item>
+        <item>Kebaya Polos Putih 4</item>
+    </string-array>
 </resources>
